@@ -26,9 +26,14 @@ btnReset.addEventListener("click",()=>{
     getMinutes.innerHTML = minutes
     getSeconds.innerHTML = seconds
     getTens.innerHTML = tens
+    document.getElementById('tbody').innerHTML=""
+
+
 
 })
 btnRecord.addEventListener('click',()=>{
+
+
     console.log(getMinutes.innerHTML,getSeconds.innerHTML,getTens.innerHTML)
     let row = document.createElement('tr')
     let data = document.createElement('td')
